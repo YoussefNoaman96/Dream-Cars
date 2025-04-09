@@ -117,11 +117,7 @@ body{
     background-image: url(../image/home-photo.jpg);
     background-size: cover;
 }
-.home-image{
-    width: 100vw;
-    height: 100vh;
-}
-.home-overlay{
+.overlay{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -130,7 +126,7 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
 }
 .home-content{
-    width: 60%;
+    width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -163,16 +159,16 @@ body{
     opacity: 0.3;
 }
 /* ---sec1---------------------------------------------------- */
+.g-container{
+    width: 80%;
+    margin: auto;
+}
 .carWorldSec{
-    width: 100%;
     height: 90vh;
     padding-top: 7vh;
 }
 .carWorld-container{
-    width: 80%;
-    margin: auto;
     margin-top: 70px;
-    overflow: auto;
 }
 .carWorld-title{
     font-size: 40px;
@@ -181,10 +177,9 @@ body{
     margin-top: 40px;
     margin-bottom: 5px;
 }
-.carWorld-line{
+.line{
     width: 90px;
     border: 2px solid rgb(26, 103, 147);
-    background-color:rgb(26, 103, 147);
     margin: auto;
     margin-top: 10px;
 }
@@ -199,7 +194,7 @@ body{
     border-radius: 10px;
     position: relative;
 }
-.carWorld-item::after{
+.aft::after{
     content:" ";
     position: absolute;
     width: 100px;
@@ -207,15 +202,14 @@ body{
     top: 0;
     left: 0;
     border-radius:8px;
-    background-color: rgba(0, 0, 0 ,0.6);
+    background-color: rgb(26, 103, 147,0.6);
     z-index: -5;
 }
-.carWorld-item:hover::after{
+.aft:hover::after{
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    opacity: 0.6;
     transition: 0.5s;
-    
 }
 .carWorld-item:hover .carWorld-item-p{
     color: #000000;
@@ -256,11 +250,7 @@ body{
     margin-top: 40px;
 }
 .work-container{
-    width: 80%;
-    margin:auto;
     margin-top: 50px;
-    overflow: auto;
-    padding: 0;
 }
 .work-title{
     font-size: 40px;
@@ -283,12 +273,6 @@ body{
     height: 100%;
 }
 .work-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
     display: none;
 }
 .work-item:hover .work-overlay {
@@ -324,31 +308,23 @@ body{
     }
 /* ----sec3----------------------------------------------------------------- */
 .offerbody{
-    width: 100%;
     height: 100vh;
     margin: auto;
 }
 .offersec{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .offer-title{
     font-size: 40px;
     text-transform: capitalize;
     padding-top: 40px;
 }
-.offer-line{
-    width: 90px;
-    border: 2px solid rgb(26, 103, 147);
-    background-color:rgb(26, 103, 147);
-    margin: auto;
-    margin-top: 10px;
-}
 .offer-container{
-    width: 80%;
-    height: 100%;
-    margin:auto;
     margin-top: 5px;
+}
+.offer-item2{
+    margin: 0px 5%;
 }
 .offer-item{
     float: left;
@@ -360,23 +336,6 @@ body{
     position: relative;
     margin-top: 30px;
     margin-bottom: 25px;
-}
-.offer-item::after{
-    content:" ";
-    position: absolute;
-    width: 100px;
-    height: 0px;
-    top: 0;
-    left: 0;
-    border-radius:8px;
-    background-color: rgba(0, 0, 0 ,0.6);
-    z-index: -5;
-}
-.offer-item:hover::after{
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-    transition: 0.5s;
 }
 .offer-item:hover .offer-p-title{
     color: #000000;
@@ -408,10 +367,7 @@ body{
 .offer-icon a{
     color:rgb(31, 121, 172) ;
 }
-.offer-item2{
-    margin: 0px 5%;
-    margin-top: 30px;
-}
+
 .offer-title-item{
     font-weight: bold;
     line-height: 30px;
@@ -427,11 +383,6 @@ body{
 /* --sec4--------------------------------------------------------------------------- */
 .choosebody{
     height: 100vh;
-}
-.choose-container{
-    width: 80% ;
-    height: 100% ;
-    margin: auto;
 }
 .choose1{
     width: 50%;
@@ -508,25 +459,8 @@ body{
     margin-top: -40px;
     position: relative;
 }
-
-.Achiev-overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.Achiev-container{
-   width: 80%;
-   margin: auto;
-   
-   
-}
 .Achiev-parent{
     margin-top: 150px;
-    overflow: auto;
-    
 }
 .Achiev-item{
     float: left;
@@ -547,10 +481,9 @@ body{
 /* sec6 --------------------------------------------------- */
 .Servicebody{
     height: 100vh;
-    width: 100%;
 }
 .ServiceSec{
-    margin-top: -60px;
+    margin-top: -70px;
 }
 .Service-title{
     font-size: 40px;
@@ -559,19 +492,10 @@ body{
     text-align: center;
 }
 .Service-line{
-    width: 90px;
-    border: 2px solid rgb(26, 103, 147);
-    margin: auto;
     margin-top: 6px;
 }
 .Service-container{
-    width: 80%;
-    margin: auto;
     margin-top: 50px;
-}
-.Service-parent{
-    overflow: auto;
-    height: 80%;
 }
 .Service-item{
     float: left;
@@ -593,8 +517,6 @@ body{
     border-radius: 50%;
     border: 2px solid rgb(26, 103, 147) ;
     margin: 20px auto;
-    text-align: center;
-    
 }
 .Service-circle-h{
     font-size: 35px;
@@ -611,7 +533,7 @@ body{
     border-radius: 10px;
     border: 2px solid rgb(26, 103, 147) ;
 }
-.Service-item::after{
+.aft2::after{
     content:" ";
     position: absolute;
     width: 100%;
@@ -619,13 +541,13 @@ body{
     top: 0;
     left: 0;
     border-radius:10px;
-    background-color: rgba(26, 103, 147 ,0.6);
+    background-color: rgba(26, 103, 147 ,0.5);
     z-index: -6;
 }
-.Service-item:hover::after{
+.aft2:hover::after{
     width: 100%;
     height: 100%;
-    opacity: 0.6 ;
+    opacity: 0.5 ;
     transition: 0.5s;
 }
 .Service-item:hover .Service-h{
@@ -651,20 +573,13 @@ body{
     left: 0;
     background-color: rgb(0, 0, 0,0.5);
 }
-.container-profile{
-    width: 80%;
-    margin: auto;
-}
 .profile-parent{
     width: 90%;
-    height: 100%;
     margin: auto;
-    overflow: auto;
 }
 .profile-item{
     float: left;
     width: 50%;
-    height: 100%;
 }
 .profile-title{
     text-transform: capitalize;
@@ -708,16 +623,6 @@ body{
     text-align: center;
     text-transform: capitalize;
     font-size: 40px;
-}
-.team-line{
-    margin: auto;
-    width: 88px;
-    border: 2px solid  #5691d1;
-    margin-top:10px ;
-}
-.team-container{
-    width: 80%;
-    margin: auto;
 }
 .team-parent{
     margin-top: 50px;
@@ -765,20 +670,7 @@ body{
     margin-left: auto;
 }
 .team-item::after{
-    content:" ";
-    position: absolute;
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    background-color:rgb(160, 179, 199);
-    border-radius:10px ;
-}
-.team-item:hover::after{
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    transition: 0.5s;
+    z-index: 1000;
 }
 .team-info{
     margin-top: 10px;
@@ -796,23 +688,12 @@ body{
 }
 /* sec9 -------------------------------------------------------- */
 .Model{
-    width: 100%;
     height: 100vh;
 }
 .model-head{
     text-align: center;
     text-transform: capitalize;
     font-size: 40px;
-}
-.model-line{
-    margin: auto;
-    width: 85px;
-    border: 2px solid  #5691d1;
-    margin-top:10px ;
-}
-.model-container{
-    width: 80%;
-    margin: auto;
 }
 .model-parent{
     margin-top: 50px;
@@ -856,24 +737,6 @@ body{
     text-decoration: none;
     margin-top: 20px;
     color: #366ca5;
-}
-.model-item::after{
-    content:" ";
-    position: absolute;
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    background-color:rgb(54, 108, 165,0.5) ;
-    transition: 0.5s;
-    z-index: -500;
-    visibility: hidden;
-}
-.model-item:hover::after{
-    width: 100%;
-    height: 100%;
-    visibility: visible;
 }
 .model-item:hover .model-title{
     color: #fff;
